@@ -4,11 +4,11 @@ This directory contains the code implementation and datasets for the **Operation
 
 ## 📂 Directory Contents
 
-* **`operational_classes.py`**: The customized V5 operational environment class where the merit-order price ladder is fully hidden from the observation vector, relying purely on chronological windows and Net Regulation Volume (NRV).
-* **`operational_td3_main.py`**: The core operational training pipeline for the `TD3` agent, featuring advanced anti-crash memory safeguards (TF graphs, graphic close flushes, and garbage collection).
-* **`operational_ppo_main.py`**: The core operational training loop for the `PPO` agent, managing rolling data purges, early stopping, and checkpoint tracking.
-* **`operational_td3_evaluation.py`**: Full dataset evaluation script for the causal `TD3` model, featuring a crimson-red chart layout.
-* **`operational_ppo_evaluation.py`**: Full dataset evaluation script for the causal `PPO` model, featuring midnight anchor alignment to isolate distinct day horizons.
+* **`Classes_TD3_without_LA_without_stairs.py`**: The customized V5 operational environment class where the merit-order price ladder is fully hidden from the observation vector, relying purely on chronological windows and Net Regulation Volume (NRV).
+* **`TD3_agent__without_LA_without_escalier.py`**: The core operational training pipeline for the `TD3` agent, featuring advanced anti-crash memory safeguards (TF graphs, graphic close flushes, and garbage collection).
+* **`PPO_agent_without_LA_without_stairs_early_stop.py`**: The core operational training loop for the `PPO` agent, managing rolling data purges, early stopping, and checkpoint tracking.
+* **`Evaluation_TD3_without_LA_without_stairs.py`**: Full dataset evaluation script for the causal `TD3` model, featuring a crimson-red chart layout.
+* **`Evaluation_agent_PPO_without_LA_without_stairs.py`**: Full dataset evaluation script for the causal `PPO` model, featuring midnight anchor alignment to isolate distinct day horizons.
 * **`Dataset_Train_2018_2019_wdw8.xlsx`**: Input training data matrix containing sliding historical window warm-ups.
 * **`Dataset_Val_2018_2019_wdw8.xlsx`**: Reference offline validation data sheet for causal loops.
 * **`Dataset_Test_2018_2019_wdw8.xlsx`**: Evaluation test matrix matching the V5 deduction operational state dimensions.
