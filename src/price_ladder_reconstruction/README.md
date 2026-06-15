@@ -4,7 +4,7 @@ This directory houses the statistical preprocessing algorithms used to reconstru
 
 ## 📂 Directory Contents
 
-* **`empirical_ladder_generator.py`**: The core V3 generation script. It aggregates historical tracks, applies nearest-neighbor horizontal spatial interpolations, enforces strict monotonicity bounds (`cummin` / `cummax` ordering), and maps entries to the matching V5 environment pricing indexes.
+* **`price_ladder_reconstruction.py`**: The core V3 generation script. It aggregates historical tracks, applies nearest-neighbor horizontal spatial interpolations, enforces strict monotonicity bounds (`cummin` / `cummax` ordering), and maps entries to the matching V5 environment pricing indexes.
 
 ## 📥 Required Fichier Dependencies
 To run this reconstruction script, drop the following external spreadsheets directly into this directory:
